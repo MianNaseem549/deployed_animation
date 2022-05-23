@@ -1,0 +1,65 @@
+.title {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container {
+    height: 400px;
+    width: 700px;
+    border: 1px solid rgb(61, 82, 80);
+    position: relative;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.transition-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.transition-image:hover {
+    opacity: 1;
+}
+
+.fadee::after {
+    content: 'The Mountains';
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.fadee:hover::after {
+    opacity: 0.5;
+}
+
+h1 {
+    font-size: 14wh;
+    position: relative;
+    color: #252839;
+    -webkit-text-stroke: 0.3vw #383d52;
+    text-transform: uppercase;
+}
+
